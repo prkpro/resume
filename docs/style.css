@@ -9,7 +9,7 @@
 
 :root {
   --page-width: 8.5in;
-  --page-height: 11in;
+  --page-height: 9.5in;
   --main-width: 6.4in;
   --sidebar-width: calc(var(--page-width) - var(--main-width));
   --decorator-horizontal-margin: 0.2in;
@@ -38,6 +38,7 @@ body {
   line-height: 1.3;
   color: #444;
   hyphens: auto;
+  /* background-color: #000; */
 }
 
 h1,
@@ -56,6 +57,7 @@ li {
   width: var(--main-width);
   padding: 0.25in 0.25in 0 0.25in;
   font-size: 7pt;
+  /* background-color: #f2f2f2; */
 }
 
 #sidebar {
@@ -363,6 +365,14 @@ h2 {
   padding: 0;
 }
 
+#Edu {
+  line-height: 1.5;
+}
+
+#Edu ul {
+  margin: 0.05in 0 0.15in;
+  padding: 0;
+}
 #disclaimer {
   position: absolute;
   bottom: var(--sidebar-horizontal-padding);
