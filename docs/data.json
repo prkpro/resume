@@ -6,7 +6,7 @@
         "phone": "7355105172",
         "address": ""
     },
-    "professional_summary": "4+ years experience in Data and Cloud Engineering, building data-intensive applications, tackling challenging architectural and scalability problems, designing, testing, and maintenance of software systems in Retails and Sales domain.Experienced with the latest cutting-edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.",
+    "professional_summary": "5+ years experience in Data and Cloud Engineering, building data-intensive applications, tackling challenging architectural and scalability problems, designing, testing, and maintenance of software systems in Retails and Sales domain.Experienced with the latest cutting-edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.",
     "experience": [
         {
             "job_title": "Senior Software Engineer - Data",
@@ -54,7 +54,6 @@
             "loc": "Delhi NCR",
             "desc": [
                 "Built Data Warehouse with in-depth data validation on data from various sales channels across the world",
-                "Prepared datasets for predicting sales using ARIMA model",
                 "Prepare and optimized Spark Jobs for batch processes",
                 "Developed an automated data cleansing process to reduce manual errors and improve data quality",
                 "Developed a data visualization dashboard that enabled users to quickly view and understand complex datasets"
@@ -75,35 +74,35 @@
     "skills": [
         {
             "name" : "Cloud",
-            "desc" : "AWS Cloudformation Lambda, ECS, EC2, S3, SNS, ECR"
+            "level" : "AWS Cloudformation Lambda, ECS, EC2, S3, SNS, ECR"
         },
         {
             "name" : "Big Data",
-            "desc" : "Kafka, Spark, Hadoop"
+            "level" : "Kafka, Spark, Hadoop"
         },
         {
             "name" : "Programming",
-            "desc" : "Python, Javascript, Bash"
+            "level" : "Python, Javascript, Bash"
         },
         {
             "name" : "Data",
-            "desc" : "ETL Pipeline, Data Warehousing, Data Modelling, Design"
+            "level" : "ETL Pipeline, Data Warehousing, Data Modelling, Design"
         },
         {
             "name" : "Database",
-            "desc" : "Snowflake, PostgresDB, Cassandra"
+            "level" : "Snowflake, PostgresDB, Cassandra"
         },
         {
             "name" : "Platform & Orchestration",
-            "desc" : "Docker, Airflow"
+            "level" : "Docker, Airflow"
         },
         {
             "name" : "CI/CD",
-            "desc" : "Gitlab CI, Jenkins"
+            "level" : "Gitlab CI, Jenkins"
         },
         {
             "name" : "Management",
-            "desc" : "Git, Jira, Confluence, Draw.io"
+            "level" : "Git, Jira, Confluence, Draw.io"
         }
         
     ],
