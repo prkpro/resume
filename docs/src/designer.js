@@ -3,7 +3,7 @@ import { Pane } from 'tweakpane'
 const KEY_EXPANDED = 'rsDesignerExpanded'
 
 const pane = new Pane({
-  title: 'Resume Designer',
+  title: '',
   expanded: localStorage.getItem(KEY_EXPANDED) === 'true',
   container: document.getElementById('builder-container'),
 })
@@ -75,36 +75,7 @@ const addCssVariablesToPane = (cssVariables) => {
   })
 }
 
-const jsObjectToCssRule = (obj) => {
-  const variables = Object.entries(obj)
-    .map(([key, value]) => `  ${key}: ${value};`)
-    .join('\n')
-
-  return `:root {\n${variables}\n}`
-}
-
 export const initDesigner = () => {
-  const cssVariables = findCssVariables()
-  addCssVariablesToPane(cssVariables)
-
-  // Add export button
-  pane.addButton({ title: 'Copy CSS to clipboard' }).on('click', () => {
-    const preset = pane.exportPreset()
-    const cssCode = jsObjectToCssRule(preset)
-
-    console.log('Your CSS variables have been copied to the clipboard!')
-    console.log('Here the same code if you need it:')
-    console.log(cssCode)
-
-    navigator.clipboard.writeText(cssCode)
-  })
-
-  pane.addButton({ title: 'Reset' }).on('click', () => {
-    cssVariables.forEach(({ variableName, value, suffix }) => {
-      setVariable(variableName, value, suffix)
-    })
-
-    const defaultValues = getDefaultValues(cssVariables)
-    pane.importPreset(defaultValues)
-  })
+  // const cssVariables = findCssVariables()
+  // addCssVariablesToPane(cssVariables)
 }

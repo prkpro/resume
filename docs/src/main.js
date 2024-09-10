@@ -10,7 +10,7 @@ import { initDesigner } from './designer'
 // and eventually add a new loader to vite.config.js
 import resume from '../resume.json'
 
-initDesigner()
+// initDesigner()
 
 Alpine.data('resume', () => ({ resume }))
 Alpine.start()
