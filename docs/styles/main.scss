@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,200&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+}
+
+:root[designer-params] {
+  --aside-bg: #47394e0f;
+  --aside-border-width: 1px;
+  --aside-border-color: #eae0e7;
+  --color-primary: #891797;
+  --color-text-secondary: #918c8c;
+  --image-margin-left: 48px;
+  --image-margin-right: 24px;
+  --image-radius: 50%;
+  // 48px * 1.1 = line-height of H1
+  --image-size: 52.8px;
+}
+
+// 👉 Paste the CSS variables copied from the Resume Designer
+// after this line
+
+a {
+  text-decoration: underline 1px solid #d7d5d5;
+  text-underline-offset: 2px;
+}
+
+main {
+  flex-grow: 1;
+  padding: 18px;
+}
+
+header.main-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+
+  img {
+    height: var(--image-size);
+    aspect-ratio: 1;
+    border-radius: var(--image-radius);
+    margin-left: var(--image-margin-left);
+    margin-right: var(--image-margin-right);
+  }
+}
+
+aside {
+  width: 7cm;
+  flex-shrink: 0;
+  background-color: var(--aside-bg);
+  border-left: var(--aside-border-width) solid var(--aside-border-color);
+
+  article {
+    margin-bottom: 16px;
+  }
+}
+
+li {
+  list-style-type: "\2013  ";
+  margin-left: 1em;
+  font-size: 10px;
+}
+
+.summary {
+  margin-bottom: 30px;
+}
+
+.name {
+  font-weight: 900;
+  font-size: 36px;
+  letter-spacing: -1px;
+  line-height: 1.1em;
+}
+
+.label {
+  color: var(--color-text-secondary);
+}
+
+.subheader {
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+.title {
+  font-weight: 700;
+  @apply text-stone-600;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+}
+.skills {
+  margin-bottom: 12px;
+}
+
+/* CSS */
+.button-3 {
+  appearance: none;
+  background-color: var(--color-primary);
+  //  #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: purple;
+  // #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: var(--color-primary);
+  // #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}

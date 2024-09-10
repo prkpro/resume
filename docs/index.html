@@ -1,331 +1,387 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" designer-params>
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="dep/normalize.css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="dep/Font-Awesome/css/font-awesome.css" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume</title>
 </head>
 
-<body id="content" lang="en">
-  <div id="editor"></div>
-  <!-- <button id="button-3" class="button-3" role="button">Download PDF</button> -->
-  <section id="main">
-    <header id="title">
-      <h1>Prakash Pandey</h1>
-      <span class="subtitle">Data &amp; Cloud Engineer</span>
-    </header>
-    <section class="main-block">
-      <h2><i class="fa fa-suitcase"></i>Data Engineering Experience</h2>
-      <section class="blocks">
-        <div class="date"><span>present</span><span>Apr, 2023</span></div>
-        <div class="decorator"></div>
-        <div class="details">
-          <header>
-            <h3>Senior Software Engineer - Data</h3>
-            <span class="place">ACL Digital</span>
-            <span class="location">Bengaluru (Remote)</span>
-          </header>
-          <div>
-            <ul>
-              <li>
-                Implement Core data processing framework in Javascript for
-                semi-structured data migration and parsing from S3 buckets to
-                Snowflake database supporting 500+ tables
-              </li>
-              <li>
-                Developed an ETL process to transform data from multiple
-                sources and load it into a data warehouse
-              </li>
-              <li>
-                Improved and refactored pipeline to dynamically increment path
-                in S3
-              </li>
-              <li>
-                Developed a data quality framework to standardize and validate
-                data
-              </li>
-            </ul>
-          </div>
+<body class="A4">
+  <div class="page-layout sheet" x-data="resume">
+    <main>
+      <header class="main-header">
+        <img x-show="resume.basics.image" :src="resume.basics.image" />
+        <div>
+          <h1 class="name" x-text="resume.basics.name"></h1>
+          <template x-if="resume.basics.label">
+            <div class="label mt-2 text-xl" x-text="resume.basics.label"></div>
+          </template>
         </div>
-      </section>
-      <section class="blocks">
-        <div class="date"><span>Mar, 2023</span><span>Dec, 2021</span></div>
-        <div class="decorator"></div>
-        <div class="details">
-          <header>
-            <h3>Software Engineer - FrontEnd APIs</h3>
-            <span class="place">Ugam</span>
-            <span class="location">Bengaluru</span>
-          </header>
-          <div>
-            <ul>
-              <li>
-                Worked on Implementing API routes and FrontEnd for dynamic forms
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="blocks">
-        <div class="date"><span>Dec, 2021</span><span>Feb, 2020</span></div>
-        <div class="decorator"></div>
-        <div class="details">
-          <header>
-            <h3>Data Engineering Analyst</h3>
-            <span class="place">Denave</span>
-            <span class="location">Delhi NCR</span>
-          </header>
-          <div>
-            <ul>
-              <li>
-                Implemented Private API Gateway with Oauth2 authorization
-                using lambda authorizer
-              </li>
-              <li>
-                Integrated Kafka REST interface on an ECS cluster for
-                producing messages to Kafka topics
-              </li>
-              <li>
-                Built an ETL framework for batch pipelines. Streamlined usage
-                by introducing a 3 file method (Config, Airflow DAG, and ETL
-                script) thus reducing ETL work
-              </li>
-              <li>
-                Build a secrets rotation module using AWS Secrets manager and
-                event bridge
-              </li>
-              <li>
-                Built a data model from scratch sourcing from real-time Kafka
-                streams for retail data in Snowflake DB
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="blocks">
-        <div class="date"><span>Feb, 2020</span><span>Nov, 2018</span></div>
-        <div class="decorator"></div>
-        <div class="details">
-          <header>
-            <h3>Database Analyst</h3>
-            <span class="place">Wipro</span>
-            <span class="location">Delhi NCR</span>
-          </header>
-          <div>
-            <ul>
-              <li>
-                Built upsert process for large tables going upto a TB in size
-              </li>
-              <li>
-                Prepared datasets for predicting sales using ARIMA model
-              </li>
-              <li>Prepare and optimized Spark Jobs for batch processes</li>
-              <li>
-                Developed an automated data cleansing process to reduce manual
-                errors and improve data quality
-              </li>
-              <li>
-                Developed a data visualization dashboard that enabled users to
-                quickly view and understand complex datasets
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </section>
-    <section class="main-block">
-      <h2><i class="fa fa-folder-open"></i>Projects</h2>
-      <section class="blocks">
-        <div class="date"><span>2024</span><span>2024</span></div>
-        <div class="decorator"></div>
-        <div class="details">
-          <header>
-            <h3><a href="https://github.com/prkashp/metaflake" target="_blank">MetaFlake View</a></h3>
-            <span class="place">Hobby</span>
-          </header>
-          <div>
-            <ul>
-              <li>Frontend was built using the Streamlit library in python</li>
-              <li>Preprocessing was based on pandas library</li>
-              <li>Backend was using snowflake accounts views to extract table information</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="blocks">
-        <div class="date"><span>present</span><span>2024</span></div>
-        <div class="decorator"></div>
-        <div class="details">
-          <header>
-            <h3>Company website backend</h3>
-            <span class="place"><a href="https://techgik.com" target="_blank">Techgik </a></span>
-          </header>
-          <div>
-            <ul>
-              <li>Built APIs and backend database using Javascript and Postgres based serverless database</li>
-              <li>Implemented rate-limiting middleware to prevent any DDOS</li>
-              <li>Integrated backend db in vercel app</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="blocks">
-        <div class="date"><span>2014</span><span>2015</span></div>
-        <div class="decorator"></div>
-        <div class="details">
-          <header>
-            <h3>Retail Data Model</h3>
-            <span class="place">Hobby</span>
-          </header>
-          <div>
-            <ul>
-              <li>
-                Built a retails data model by parsing a complex json payload. Used snowflake connector to sink events
-                from kafka and parsed them to different tables such as Customers, Transactions,ItemsTransaction,
-                Discounts, ReturnsTransaction. etc.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- <section class="blocks">
-        <div class="date">
-          <span>2014</span>
-        </div>
-        <div class="decorator"></div>
-        <div class="details">
-          <header>
-            <h3>Some Project 3</h3>
-            <span class="place">Some workplace</span>
-          </header>
-          <div>
-            <ul>
-              <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                nec mi ante. Etiam odio eros, placerat eu metus id, gravida
-                eleifend odio
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section> -->
-    </section>
-    <!-- <section class="main-block concise">
-      <h2><i class="fa fa-graduation-cap"></i> Education</h2>
-      <section class="blocks">
-        <div class="date"><span>2009</span><span>2014</span></div>
-        <div class="decorator"></div>
-        <div class="details">
-          <header>
-            <h3>Ph.D. in Forty-Two Discovery</h3>
-            <span class="place">Inexistent University</span>
-            <span class="location">Some City, Some Country</span>
-          </header>
-          <div>
-            Relationship of the number with the answer to life, the universe
-            and everything
-          </div>
-        </div>
-      </section>
-      <section class="blocks">
-        <div class="date"><span>2005</span><span>2009</span></div>
-        <div class="decorator"></div>
-        <div class="details">
-          <header>
-            <h3>LL.B. in H&aelig;matophagic Economics</h3>
-            <span class="place">Inexistent University</span>
-            <span class="location">Some City, Some Country</span>
-          </header>
-          <div>President's Scholarship</div>
-        </div>
-      </section>
-      <section class="blocks">
-        <div class="date"><span>2014</span><span>2018</span></div>
-        <div class="decorator"></div>
-        <div class="details">
-          <header>
-            <h3>Bachelors of Electronics and Communication Engineering</h3>
-            <span class="place">Lovely Professional University</span>
-            <span class="location">Punjab, India</span>
-          </header>
-          <div>8.4 GPA</div>
-        </div>
-      </section>
-      <section class="blocks">
-        <div class="date"></div>
-        <div class="decorator"></div>
-        <div class="details">
-          <header>
-            <h3>Courses</h3>
-          </header>
-          <div class="concise">
-            <ul>
-              <li>NPTEL Programming, Data Structures and Algorithms using Python, IITM</li>
-              <li>Learning path: Career Essentials in Software Development by Microsoft and LinkedIn</li>
-              <li>LinkedIn: Apache Kafka Essential Training</li>
-              <li>LinkedIn: Big Data Analytics with Hadoop and Apache Spark</li>
-              <li>Hackerrank: SQL Advanced Certification</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </section> -->
-  </section>
-  <aside id="sidebar">
-    <div class="side-block" id="contact">
-      <h1>Contact Info</h1>
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/prakash-pandey-data-science/" target="_blank">LinkedIn </a>
-        </li>
-        <li>
-          <a href="https://prkpro.github.io" target="_blank">Portfolio </a>
-        </li>
-        <li>
-          <a href="https://medium.com/@prakashpro86" target="_blank">Blogs </a>
-        </li>
-        <li>
-          <a href="mailto:prakashpro86@gmail.com" target="_blank">prakashpro86@gmail.com </a>
-        </li>
-        <li>
-          <a href="tel: 7355-105172" target="_blank">7355-105172</a>
-        </li>
-      </ul>
-    </div>
-    <div class="side-block" id="skills">
-      <h1>Skills</h1>
-      <ul>
-        <li><b>Cloud</b>: AWS Cloudformation Lambda, ECS, EC2, S3, SNS, ECR</li>
-        <li><b>Big Data</b>: Kafka, Flink</li>
-        <li><b>Programming</b>: Python Javascript Bash</li>
-        <li><b>SQL</b>: Data Warehousing, Modelling, Design, ETL</li>
-        <li><b>Databases</b>: Snowflake, Postgres, Cassandra </li>
-        <li><b>Platform and Orceshtration</b>: Docker, Airflow</li>
-        <li><b>CICD</b>.: Gitlab, Jenkins</li>
-        <li><b>Management</b>: Git, Jira, Confluence, Miro</li>
-        <li><b>Methodology</b>: Agile, RAD</li>
-      </ul>
-    </div>
-    <div class="side-block" id="Edu">
-      <h1>Education</h1>
-      <ul>
-        <li><b>Bachelors in Electronics and Communications</b></li>
-        <li>Lovely Professional University GPA 3.36</li>
-      </ul>
-      <ul>
-        <li><b>Elective Course, IIT Madras</b>
-        <li>Data Structures and Algorithms in Python</li>
-        </li>
-      </ul>
-    </div>
-  </aside>
+      </header>
+      <p class="subheader ml-12 text-base">Experience</p>
 
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
-  <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-  <script type="text/javascript" src="main.js"></script> -->
+      <template x-for="work in resume.work">
+        <article class="mb-6 last:mb-0">
+          <header class="flex items-start gap-x-4">
+            <figure class="h-8 aspect-square">
+              <template x-if="work.logo">
+                <img :src="work.logo" class="h-full w-full" />
+              </template>
+
+              <template x-if="!work.logo">
+                <div></div>
+              </template>
+            </figure>
+
+            <div class="grow">
+              <p class="title">
+                <span x-text="work.position"></span> @
+                <template x-if="work.url">
+                  <a :href="work.url" x-text="work.name" target="_blank"></a>
+                </template>
+                <template x-if="!work.url">
+                  <span x-text="work.name"></span>
+                </template>
+              </p>
+
+              <p class="subtitle mb-2" x-text="work.summary"></p>
+            </div>
+
+            <div class="shrink-0 text-right subtitle">
+              <div>
+                <span x-text="work.startDate"></span> -
+                <span x-text="work.endDate"></span>
+              </div>
+
+              <div x-text="work.location"></div>
+            </div>
+          </header>
+
+          <ul class="ml-12">
+            <template x-for="line in work.highlights">
+              <li x-text="line"></li>
+            </template>
+          </ul>
+        </article>
+      </template>
+
+      <template x-if="resume.volunteer && resume.volunteer.length">
+        <p class="subheader ml-12 text-base">Volunteering</p>
+      </template>
+
+      <template x-for="volunteer in resume.volunteer">
+        <article class="mb-6 last:mb-0">
+          <header class="flex items-start gap-x-4">
+            <figure class="h-8 aspect-square">
+              <template x-if="volunteer.logo">
+                <img :src="volunteer.logo" class="h-full w-full" />
+              </template>
+
+              <template x-if="!volunteer.logo">
+                <div></div>
+              </template>
+            </figure>
+
+            <div class="grow">
+              <p class="title">
+                <span x-text="volunteer.position"></span> @
+                <template x-if="volunteer.url">
+                  <a :href="volunteer.url" x-text="volunteer.organization" target="_blank"></a>
+                </template>
+                <template x-if="!volunteer.url">
+                  <span x-text="volunteer.organization"></span>
+                </template>
+              </p>
+
+              <p class="subtitle mb-2" x-text="volunteer.summary"></p>
+            </div>
+
+            <div class="shrink-0 text-right subtitle">
+              <div>
+                <span x-text="volunteer.startDate"></span> -
+                <span x-text="volunteer.endDate"></span>
+              </div>
+            </div>
+          </header>
+
+          <ul class="ml-12">
+            <template x-for="line in volunteer.highlights">
+              <li x-text="line"></li>
+            </template>
+          </ul>
+        </article>
+      </template>
+
+      <template x-if="resume.projects && resume.projects.length">
+        <p class="subheader ml-12 text-base">Projects</p>
+      </template>
+
+      <template x-for="project in resume.projects">
+        <article class="mb-6 last:mb-0">
+          <header class="flex items-start gap-x-4">
+            <figure class="h-8 aspect-square">
+              <template x-if="project.logo">
+                <img :src="project.logo" class="h-full w-full" />
+              </template>
+
+              <template x-if="!project.logo">
+                <div></div>
+              </template>
+            </figure>
+
+            <div class="grow">
+              <p class="title">
+                <template x-if="project.url">
+                  <a :href="project.url" x-text="project.name" target="_blank"></a>
+                </template>
+                <template x-if="!project.url">
+                  <span x-text="project.name"></span>
+                </template>
+              </p>
+
+              <p class="subtitle mb-2" x-text="project.summary"></p>
+            </div>
+
+            <div class="shrink-0 text-right subtitle">
+              <div>
+                <span x-text="project.startDate"></span> -
+                <span x-text="project.endDate"></span>
+              </div>
+            </div>
+          </header>
+
+          <ul class="ml-12">
+            <template x-for="line in project.highlights">
+              <li x-text="line"></li>
+            </template>
+          </ul>
+        </article>
+      </template>
+
+      <template x-if="resume.publications && resume.publications.length">
+        <p class="subheader ml-12 text-base">Publications</p>
+      </template>
+
+      <template x-for="publication in resume.publications">
+        <article class="mb-6 last:mb-0">
+          <header class="flex items-start gap-x-4">
+            <figure class="h-8 aspect-square">
+              <template x-if="publication.logo">
+                <img :src="publication.logo" class="h-full w-full" />
+              </template>
+
+              <template x-if="!publication.logo">
+                <div></div>
+              </template>
+            </figure>
+
+            <div class="grow">
+              <p class="title">
+                <template x-if="publication.url">
+                  <a :href="publication.url" x-text="publication.name" target="_blank"></a>
+                </template>
+                <template x-if="!publication.url">
+                  <span x-text="publication.name"></span>
+                </template> @
+                <span x-text="publication.publisher"></span>
+              </p>
+
+              <p class="subtitle mb-2" x-text="publication.summary"></p>
+            </div>
+
+            <div class="shrink-0 text-right subtitle">
+              <div>
+                <span x-text="publication.releaseDate"></span>
+              </div>
+            </div>
+          </header>
+        </article>
+      </template>
+    </main>
+
+    <aside class="p-6">
+
+      <section class="summary mb-4 last:mb-0">
+        <p class="subheader">Contacts & Links</p>
+
+        <template x-if="resume.basics.email">
+          <p class="flex mb-1">
+            <img src="/icons/email.svg" class="h-4 aspect-square inline mr-2 opacity-50" />
+            <a :href="`mailto:${resume.basics.email}`" x-text="resume.basics.email" target="_blank"></a>
+          </p>
+        </template>
+
+        <template x-if="resume.basics.phone">
+          <p class="flex mb-1">
+            <img src="/icons/phone.svg" class="h-4 aspect-square inline mr-2 opacity-50" />
+            <a :href="`tel:${resume.basics.phone.replaceAll(' ', '')}`" x-text="resume.basics.phone"></a>
+          </p>
+        </template>
+
+        <template x-if="resume.basics.location && Object.keys(resume.basics.location).length">
+          <div class="flex mb-2">
+            <img src="/icons/location.svg" class="h-4 aspect-square inline mr-2 opacity-50" />
+            <div>
+              <div x-text="resume.basics.location.address"></div>
+              <div>
+                <span x-text="resume.basics.location.postalCode"></span>
+                <span x-text="resume.basics.location.city"></span>
+              </div>
+              <div x-text="resume.basics.location.region"></div>
+              <div x-text="resume.basics.location.countryCode"></div>
+            </div>
+          </div>
+        </template>
+
+        <template x-if="resume.basics.url">
+          <p class="flex mb-1">
+            <img src="/icons/link.svg" class="h-4 aspect-square inline mr-2 opacity-50" />
+            <a style="padding-right: 15px;" x-bind:href="resume.basics.url" target="_blank">Portfolio</a>
+            <img src="/icons/linkedin.svg" class="h-4 aspect-square inline mr-2 opacity-50" />
+            <a x-bind:href="resume.basics.LinkedIn" target="_blank">LinkedIn</a>
+          </p>
+        </template>
+        <template x-if="resume.basics.Github">
+          <p class="flex mb-1">
+            <img src="/icons/github.svg" class="h-4 aspect-square inline mr-2 opacity-50" />
+            <a style="padding-right: 25px;" x-bind:href="resume.basics.Github" target="_blank">Github</a>
+            <img src="/icons/medium.svg" class="h-4 aspect-square inline mr-2 opacity-50" />
+            <a x-bind:href="resume.basics.Medium" target="_blank">Blogs</a>
+          </p>
+        </template>
+
+      </section>
+
+      <template x-if="resume.skills && resume.skills.length">
+        <section class="summary">
+          <p class="subheader">Skills</p>
+
+          <template x-for="skill in resume.skills">
+            <div class="skills">
+              <div>
+                <p class="title" style="display: inline;" x-text="skill.name"></p>
+                <p style="display: inline;" x-text="skill.level"></p>
+              </div>
+
+
+              <div>
+                <template x-for="kw in skill.keywords">
+                  <span x-text="kw"></span>
+                </template>
+              </div>
+            </div>
+          </template>
+        </section>
+      </template>
+
+      <template x-if="resume.languages && resume.languages.length">
+        <section class="summary">
+          <p class="subheader">Languages</p>
+
+          <template x-for="language in resume.languages">
+            <div class="flex justify-between gap-x-4">
+              <div class="title" x-text="language.language"></div>
+              <div class="subtitle" x-text="language.fluency"></div>
+            </div>
+          </template>
+        </section>
+      </template>
+
+      <template x-if="resume.education && resume.education.length">
+        <section class="summary">
+          <p class="subheader">Education</p>
+
+          <template x-for="education in resume.education">
+            <article>
+              <p class="title">
+                <span x-text="education.studyType"></span>
+                &middot;
+                <span x-text="education.area"></span>
+              </p>
+              <p>
+                <template x-if="education.url">
+                  <a :href="education.url" x-text="education.institution" target="_blank"></a>
+                </template>
+                <template x-if="!education.url">
+                  <span x-text="education.institution"></span>
+                </template>
+              </p>
+              <p class="subtitle">
+                <span x-text="education.startDate"></span> -
+                <span x-text="education.endDate"></span>
+              </p>
+            </article>
+          </template>
+        </section>
+      </template>
+
+      <template x-if="resume.certificates && resume.certificates.length">
+        <section class="summary">
+          <p class="subheader">Certificates</p>
+
+          <template x-for="cert in resume.certificates">
+            <div>
+              <p x-text="cert.name" class="title"></p>
+              <p>
+                <template x-if="cert.url">
+                  <a :href="cert.url" x-text="cert.issuer" target="_blank"></a>
+                </template>
+                <template x-if="!cert.url">
+                  <span x-text="cert.issuer"></span>
+                </template>
+              </p>
+              <p x-text="cert.date" class="subtitle"></p>
+            </div>
+          </template>
+        </section>
+      </template>
+
+      <template x-if="resume.awards && resume.awards.length">
+        <section>
+          <p class="subheader">Awards</p>
+
+          <template x-for="award in resume.awards">
+            <div>
+              <p x-text="award.title" class="title"></p>
+              <p>
+                <template x-if="award.url">
+                  <a :href="award.url" x-text="award.awarder" target="_blank"></a>
+                </template>
+                <template x-if="!award.url">
+                  <span x-text="award.awarder"></span>
+                </template>
+              </p>
+              <p x-text="award.date" class="subtitle"></p>
+            </div>
+          </template>
+        </section>
+      </template>
+
+
+
+      <template x-if="resume.basics.profiles && resume.basics.profiles.length">
+        <section class="mb-4">
+          <p class="subheader">Profiles</p>
+
+          <template x-for="profile in resume.basics.profiles">
+            <p class="flex mb-1">
+              <img :src="profile.logo" class="h-4 aspect-square inline mr-2 opacity-50" />
+              <a :href="profile.url" x-text="profile.url.split('://').pop()" target="_blank"></a>
+            </p>
+          </template>
+        </section>
+      </template>
+
+
+    </aside>
+  </div>
+  <div style="display: none;" id="builder-container" class="fixed top-10 right-40 no-print">
+  </div>
+  <div id="builder-container" class="fixed top-10 right-40 no-print">
+    <button class="button-3" role="button" onClick="window.print()">Print!</button>
+  </div>
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>

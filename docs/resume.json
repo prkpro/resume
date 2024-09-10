@@ -1,0 +1,171 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Prakash Pandey",
+    "label": "Sr Data & Cloud Engineer",
+    "summary": "5+ years experience in Data and Cloud Engineering, building data-intensive applications, tackling challenging architectural and scalability problems, designing, testing, and maintenance of software systems in Retails and Sales domain.Experienced with the latest cutting-edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.",
+    "image": "",
+    "location": {
+      "address": "",
+      "city": "",
+      "postalCode": "",
+      "region": "Remote",
+      "countryCode": ""
+    },
+    "url": "https://prkpro.github.io/",
+    "phone": "+91 7355105172",
+    "email": "prakashpro86@gmail.com",
+    "LinkedIn": "https://www.linkedin.com/in/prakash-pandey-data-science/",
+    "Medium": "https://medium.com/@prakashpro86",
+    "Github": "https://github.com/prkashp/"
+  },
+  "education": [
+    {
+      "institution": "Lovely Professional University",
+      "studyType": "Bachelor of Technology",
+      "area": "Computer and Electronics",
+      "startDate": "2014",
+      "endDate": "2018"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Working proficiency"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "work": [
+    {
+      "name": "ACL Digital",
+      "logo": "/logo/acl_logo.png",
+      "position": "Senior Software Engineer - Data",
+      "summary": "Designed and Developed core data processing framework",
+      "startDate": "2023-04",
+      "highlights": [
+        "Implement Core data processing framework in Javascript for semi-structured data migration and parsing from S3 buckets to Snowflake database supporting 500+ tables",
+        "Developed an ETL process to transform data from multiple sources and load it into a data warehouse",
+        "Improved and refactored pipeline to dynamically increment path in S3",
+        "Developed a data quality framework to standardize and validate data"
+      ],
+      "location": "Bengaluru (Remote)",
+      "url": "https://www.acldigital.com/blogs/fundamentals-data-contracts"
+    },
+    {
+      "name": "Ugam",
+      "logo": "/logo/Ugam_logo.png",
+      "position": "Software Engineer - Frontend & API",
+      "summary": "Developed FrontEnd designs and APIs",
+      "startDate": "2021-12",
+      "endDate": "2023-03",
+      "highlights": [
+        "Worked on Implementing RestAPI routes and FrontEnd for dynamic forms"
+      ],
+      "location": "Bengaluru"
+    },
+    {
+      "name": "Denave",
+      "logo": "/logo/denave.png",
+      "position": "Data Analyst, Engineering",
+      "summary": "Build streaming pipeline based on API calls and Kafka",
+      "startDate": "2020-02",
+      "endDate": "2021-12",
+      "highlights": [
+        "Implemented Private API Gateway with Oauth2 authorization using lambda authorizer",
+        "Integrated Kafka REST interface on an ECS cluster for producing messages to Kafka topics",
+        "Built an ETL framework for batch pipelines. Streamlined usage by introducing a 3 file method (Config, Airflow DAG, and ETL script) thus reducing ETL work",
+        "Build a secrets rotation module using AWS Secrets manager and event bridge",
+        "Built a data model from scratch sourcing from real-time Kafka streams for retail data in Snowflake DB"
+      ],
+      "location": "Delhi NCR"
+    },
+    {
+      "name": "Wipro",
+      "logo": "/logo/wipro_logo.png",
+      "position": "Database Analyst",
+      "summary": "Build batch pipeline based on connector and Airflow",
+      "startDate": "2018-11",
+      "endDate": "2020-02",
+      "highlights": [
+        "Built Data Warehouse with in-depth data validation on data from various sales channels across the world",
+        "Prepare and optimized Spark Jobs for batch processes"
+      ],
+      "location": "Delhi NCR"
+    }
+  ],
+  "projects": [
+    {
+      "name": "TechGik",
+      "startDate": "2024-04-01",
+      "endDate": "2024",
+      "summary": "A startup website with Feedback forms and Blogs",
+      "highlights": [
+        "Built APIs and backend database using Javascript and Postgres based serverless database"
+      ],
+      "url": "https://techgik.com/"
+    },
+    {
+      "name": "MetaFlakes",
+      "startDate": "2024-06-22",
+      "endDate": "2024",
+      "summary": "An admin website to view objects from snowflake databases",
+      "highlights": [
+        "Frontend was built using the Streamlit library in python"      ],
+      "url": "https://github.com/prkashp/metaflake"
+    },
+    {
+      "name": "Retail Data Model",
+      "startDate": "2023-08-02",
+      "endDate": "2024",
+      "summary": "A transactional based retail data model from Json payload ",
+      "highlights": [
+        "Built a retails data model by parsing a complex json payload."      ],
+      "url": "https://www.404.com/"
+    }
+  ],
+  "skills": [
+    {
+      "name" : "Cloud: ",
+      "level" : "AWS Cloudformation Lambda, ECS, EC2, S3, SNS, ECR"
+  },
+  {
+      "name" : "Big Data: ",
+      "level" : "Apache Kafka, Spark, Hadoop"
+  },
+  {
+      "name" : "Programming: ",
+      "level" : "Python, Javascript, Bash"
+  },
+  {
+      "name" : "Data: ",
+      "level" : "ETL Pipeline, Data Warehousing, Data Modelling, Design"
+  },
+  {
+      "name" : "Database: ",
+      "level" : "Snowflake, PostgresDB, Cassandra"
+  },
+  {
+      "name" : "Platform & Orchestration: ",
+      "level" : "Docker Desktop, Apache Airflow"
+  },
+  {
+      "name" : "CI/CD: ",
+      "level" : "Gitlab CI, Jenkins"
+  },
+  {
+      "name" : "Management: ",
+      "level" : "Git, Jira, Confluence, Draw.io"
+  }
+  ],
+  "certificates": [
+    {
+      "issuer": "IIT Madras",
+      "name": "Data Structures and Algorithms in Python",
+      "date": "2018",
+      "url": ""
+    }
+  ]
+}
