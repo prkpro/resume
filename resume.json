@@ -41,7 +41,7 @@
   "work": [
     {
       "name": "ACL Digital",
-      "logo": "/logo/acl_logo.png",
+      "logo": "./logo/acl_logo.png",
       "position": "Senior Software Engineer - Data",
       "summary": "Designed and Developed core data processing framework",
       "startDate": "2023-04",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Ugam",
-      "logo": "/logo/Ugam_logo.png",
+      "logo": "./logo/Ugam_logo.png",
       "position": "Software Engineer - Frontend & API",
       "summary": "Developed FrontEnd designs and APIs",
       "startDate": "2021-12",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Denave",
-      "logo": "/logo/denave.png",
+      "logo": "./logo/denave.png",
       "position": "Data Analyst, Engineering",
       "summary": "Build streaming pipeline based on API calls and Kafka",
       "startDate": "2020-02",
@@ -84,7 +84,7 @@
     },
     {
       "name": "Wipro",
-      "logo": "/logo/wipro_logo.png",
+      "logo": "./logo/wipro_logo.png",
       "position": "Database Analyst",
       "summary": "Build batch pipeline based on connector and Airflow",
       "startDate": "2018-11",
