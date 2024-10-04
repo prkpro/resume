@@ -15,7 +15,7 @@
     "url": "https://prkpro.github.io/",
     "phone": "+91 7355105172",
     "email": "prakashpro86@gmail.com",
-    "LinkedIn": "https://www.linkedin.com/in/prakash-pandey-data-science/",
+    "LinkedIn": "https://www.linkedin.com/in/prkaashpaandey/",
     "Medium": "https://medium.com/@prakashpro86",
     "Github": "https://github.com/prkashp/"
   },
@@ -62,6 +62,7 @@
       "startDate": "2021-12",
       "endDate": "2023-03",
       "highlights": [
+        "Developed client-facing single page applications using HTML, CSS and Javascript",
         "Worked on Implementing RestAPI routes and FrontEnd for dynamic forms"
       ],
       "location": "Bengaluru"
@@ -113,7 +114,8 @@
       "endDate": "2024",
       "summary": "An admin website to view objects from snowflake databases",
       "highlights": [
-        "Frontend was built using the Streamlit library in python"      ],
+        "Frontend was built using the Streamlit library in python"
+      ],
       "url": "https://github.com/prkashp/metaflake"
     },
     {
@@ -122,43 +124,44 @@
       "endDate": "2024",
       "summary": "A transactional based retail data model from Json payload ",
       "highlights": [
-        "Built a retails data model by parsing a complex json payload."      ],
+        "Built a retails data model by parsing a complex json payload."
+      ],
       "url": "https://www.404.com/"
     }
   ],
   "skills": [
     {
-      "name" : "Cloud: ",
-      "level" : "AWS Cloudformation Lambda, ECS, EC2, S3, SNS, ECR"
-  },
-  {
-      "name" : "Big Data: ",
-      "level" : "Apache Kafka, Spark, Hadoop"
-  },
-  {
-      "name" : "Programming: ",
-      "level" : "Python, Javascript, Bash"
-  },
-  {
-      "name" : "Data: ",
-      "level" : "ETL Pipeline, Data Warehousing, Data Modelling, Design"
-  },
-  {
-      "name" : "Database: ",
-      "level" : "Snowflake, PostgresDB, Cassandra"
-  },
-  {
-      "name" : "Platform & Orchestration: ",
-      "level" : "Docker Desktop, Apache Airflow"
-  },
-  {
-      "name" : "CI/CD: ",
-      "level" : "Gitlab CI, Jenkins"
-  },
-  {
-      "name" : "Management: ",
-      "level" : "Git, Jira, Confluence, Draw.io"
-  }
+      "name": "Cloud: ",
+      "level": "AWS Cloudformation Lambda, ECS, EC2, S3, SNS, ECR"
+    },
+    {
+      "name": "Big Data: ",
+      "level": "Apache Kafka, Spark, Hadoop"
+    },
+    {
+      "name": "Programming: ",
+      "level": "Python, Javascript, Bash"
+    },
+    {
+      "name": "Data: ",
+      "level": "ETL Pipeline, Data Warehousing, Data Modelling, Design"
+    },
+    {
+      "name": "Database: ",
+      "level": "Snowflake, PostgresDB, Cassandra"
+    },
+    {
+      "name": "Platform & Orchestration: ",
+      "level": "Docker Desktop, Apache Airflow"
+    },
+    {
+      "name": "CI/CD: ",
+      "level": "Gitlab CI, Jenkins"
+    },
+    {
+      "name": "Management: ",
+      "level": "Git, Jira, Confluence, Draw.io"
+    }
   ],
   "certificates": [
     {
